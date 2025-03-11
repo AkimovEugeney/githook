@@ -24,7 +24,6 @@ else
     echo "💡 Нет файлов для форматирования."
 fi
 
-echo "✅ Ошибок нет."
 exit 0
 
 if git rev-parse --verify HEAD >/dev/null 2>&1
