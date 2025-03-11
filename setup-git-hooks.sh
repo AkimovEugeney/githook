@@ -32,7 +32,7 @@ if ! grep -q '"prepare":' package.json; then
   jq '.scripts.prepare = "git config core.hooksPath .git-hooks || echo \"Not in a git repo\""' package.json > temp.json && mv temp.json package.json
   echo "💡Команда 'prepare' добавлена в package.json."
 else
-  echo "⚠️Команда 'prepare' уже существует в package.json."
+  echo "🔗Команда 'prepare' уже существует в package.json."
 fi
 
 echo "✅Git хуки успешно настроены!"
